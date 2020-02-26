@@ -15,6 +15,7 @@ namespace Dealership
 
       List<Car> Cars = new List<Car>() { volkswagen, yugo, ford, amc };
 
+      // Example calling on/evoking the Setter method
       yugo.SetPrice(300);
 
       Console.WriteLine("Enter maximum price: ");
@@ -34,10 +35,14 @@ namespace Dealership
       foreach(Car automobile in CarsMatchingSearch)
       {
         Console.WriteLine("---------------");
+        // Example calling on/evoking a the Getter method (instance method)
         Console.WriteLine(automobile.GetMakeModel());
         Console.WriteLine(automobile.GetMiles() + " miles");
         Console.WriteLine("$" + automobile.GetPrice());
       }
+      // Example calling on/evoking a static method
+      Console.WriteLine("- - - - - - - -");
+      Console.WriteLine(Car.MakeSound("bang"));
     }
   }
 }
