@@ -39,7 +39,7 @@ namespace Dealership.Models
     // Static method example
     public static string MakeSound(string sound)
     {
-      return "You know Lenny's Lemons are truly lemons because our cars make " + sound + " sounds!";
+      return "You know Lonny's Lemons are truly lemons because our cars make " + sound + " sounds!";
     }
 
     public bool WorthBuying(int maxPrice)
